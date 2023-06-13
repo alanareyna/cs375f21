@@ -1,0 +1,24 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" >
+
+	<polygon stroke="black" fill="none" points="100 100 200 100 300 200 200 300 100 300" />
+
+	<polygon stroke="red" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="rotate (20) scale (2.0) translate (50 20) " />
+
+	<polygon stroke="orange" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="rotate (20) translate (50 20) scale (2.0) " />
+
+	<polygon stroke="yellow" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="scale (2.0) rotate (20) translate (50 20) " />
+
+	<polygon stroke="green" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="scale (2.0) translate (50 20) rotate (20) " />
+
+	<polygon stroke="blue" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="translate (50 20) rotate (20) scale (2.0) " />
+
+	<polygon stroke="purple" fill="none" points="100 100 200 100 300 200 200 300 100 300"
+		transform="translate (50 20) scale (2.0) rotate (20) " />
+
+
+</svg >

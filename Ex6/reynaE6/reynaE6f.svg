@@ -1,0 +1,29 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" >
+    <rect x="0" y="0" width="500" height="500" fill="none" stroke="rgb(128,128,128)"  />
+	<polygon points="250,150 160,340 160,360 200,450 300,450 340,360 340,340" stroke="black" fill="rgb(235, 234, 197)" />
+	<line x1="200" y1="325" x2="200" y2="450" stroke="black" stroke-width="2" />
+	<line x1="250" y1="325" x2="250" y2="450" stroke="black" stroke-width="2" />
+	<line x1="300" y1="325" x2="300" y2="450" stroke="black" stroke-width="2" /> 
+	<ellipse cx="220" cy="450" rx="30" ry="20" stroke="black" fill="rgb(235, 234, 197)" /> 
+    <polyline points="205,460 209,465 213,460 217,465 221,460 225,465 229,460 233,465 237,460" stroke-width="1" stroke="black" fill="none" />
+	<ellipse cx="280" cy="450" rx="30" ry="20" stroke="black" fill="rgb(235, 234, 197)" /> 
+	<polyline points="265,460 269,465 273,460 277,465 281,460 285,465 289,460 293,465 297,460" stroke-width="1" stroke="black" fill="none" /> 
+    <polygon points="165,55 180,130 225,85" stroke="black" stroke-width="5" fill="rgb(235, 234, 197)" transform="rotate(18, 165, 55)"/> 
+	<polygon points="335,55 320,130 275,85" stroke="black" stroke-width="5" fill="rgb(235, 234, 197)" transform="rotate(-18, 335, 55)" /> 
+	<ellipse cx="250" cy="150" rx="100" ry="60" stroke="black" fill="rgb(235, 234, 197)" />
+	<rect x="210" y="205" width="80" height="10" fill="rgb(227, 118, 227)" stroke="black" />
+	<circle cx="250" cy="225" r="15" stroke="black" fill="gold" />
+	<ellipse cx="220" cy="145" rx="20" ry="13" fill="white" stroke="black" stroke-width="2" /> 
+	<ellipse cx="220" cy="145" rx="7" ry="11" fill="rgb(56, 35, 35)" stroke="black" /> 
+	<ellipse cx="280" cy="145" rx="20" ry="13" fill="white" stroke="black" stroke-width="2" /> 
+	<ellipse cx="280" cy="145" rx="7" ry="11" fill="rgb(56, 35, 35)" stroke="black" /> 
+	<polygon points="250,180 240,170 260,170" stroke="black" fill="black" />
+	<path d="M 250,180 Q 250,200 230,195 M 250,180 Q 250,200 270,195 " fill="none" stroke="black" stroke-width="3" />
+	<line x1="240" y1="180" x2="220" y2="170" stroke="black" stroke-width="1" />
+	<line x1="240" y1="180" x2="220" y2="175" stroke="black" stroke-width="1" />
+	<line x1="240" y1="180" x2="220" y2="180" stroke="black" stroke-width="1" />
+
+	<line x1="260" y1="180" x2="280" y2="170" stroke="black" stroke-width="1" />
+	<line x1="260" y1="180" x2="280" y2="175" stroke="black" stroke-width="1" />
+	<line x1="260" y1="180" x2="280" y2="180" stroke="black" stroke-width="1" />
+</svg>

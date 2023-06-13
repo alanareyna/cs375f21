@@ -1,0 +1,14 @@
+Answers to Exercise 6 Questions
+
+Name: Alana Reyna
+
+Part 4 - 10. Is it possible to create a perfect circle using one or more quadratic or cubic curves?
+No, you could get a close approximation but not optain a perfect circle. There is not an exact  
+
+Part 5 - 5. The same transformations have been applied to all 3 of the new rectangles. Why are they in different locations in the image?
+Although the transformations have been applied to all 3 of the new rectangles, they are ordered differently which is why they are in 
+different locations of the image. For example, the second rectangle, all the points are adjusted by scaling them by 1.5. This means the x and y values
+are multiplied by 1.5. Then the points are adjusted with rotate by applying the rotation matrix convention. Then, these new x and y values are again adjusted 
+by applying the translate transformation. When these operations take place in a different order, the resulting points will be different since we get different 
+x and y values by the different transformations. These operations take place linearly, they are not all applied in the same order, therefore, all of the 
+rectangles will have different locations because the transformations take place in a different order for each of them. 

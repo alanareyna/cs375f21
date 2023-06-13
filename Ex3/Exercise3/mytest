@@ -1,0 +1,4 @@
+make
+./Ex3.out $1.dat $1.bmp 
+cp $1.bmp ~/public_html/cs375f21/Viewer
+chmod 644 ~/public_html/cs375f21/Viewer/$1.bmp

@@ -1,0 +1,55 @@
+Exercise 7 Questions
+
+Name: Alana Reyna
+
+3. *What are the transformations applied to the red polygons?
+translate (50 20) scale (2.0)
+scale (2.0) translate (50 20)
+
+4. *What are the transformations applied to the green polygons?
+translate (50 20) rotate (20)
+rotate (20) translate (50 20)
+
+5. *What are the transformations applied to the purple polygons?
+scale (2.0) rotate (20)
+rotate (20) scale (2.0)
+
+6. *Why are there 2 red polygons and 2 green polygons, but only 1 purple polygon?
+The reason that there is only one purple polygon is that the two purple polygons are 
+overriding each other. When calculating the points using scale and rotate in both orders,
+I came to the same results for each of the points. However, with the other polygons, switching
+the order of the transformations does change the resulting points of the polygons. 
+
+8. *What transformations are applied to the red polygon?
+rotate (20) scale (2.0) translate (50 20)
+
+9. *What transformations are applied to the orange polygon?
+rotate (20) translate (50 20) scale (2.0)
+
+10. *What transformations are applied to the yellow polygon?
+scale (2.0) rotate (20) translate (50 20)
+
+11. *What transformations are applied to the green polygon?
+scale (2.0) translate (50 20) rotate (20)
+
+12. *What transformations are applied to the blue polygon?
+translate (50 20) rotate (20) scale (2.0)
+
+13. *What transformations are applied to the purple polygon?
+translate (50 20) scale (2.0) rotate (20)
+
+14. *Why are the red and blue polygons not visible in the image?
+The reason the blue polygon is not visible is because it gets overridden by the 
+purple polygon. This means their points are the same after the transformations are applied. 
+The reason the red polygon is not visible is because it gets overridden by the 
+yellow polygon. The reason the order did not change the results of the red vs yellow polygon and the 
+blue vs purple polygon is because rotate and scale can be in any order and you will get the same
+result. Since translate is done before the rotate and scale transformations for blue and purple, it does
+not affect the result of the points. This is the same for red and yellow polygons. 
+
+15. *The same transformations have been applied to the same polygon to create the 
+    red, orange, yellow, green, blue, and purple polygons. Why are most of them in different locations?*
+The reason they are in different locations is because of the order translate is in. Changing where we call translate
+will change the result of the points. Scale and rotate can be interchanged without resulting in different points 
+and locations. 
+

@@ -1,0 +1,84 @@
+Exercise 8
+Name: Alana Reyna
+
+Part 1
+2. After reviewing the contents of the file Ex1.cpp, compile Ex1.cpp (using g++) and execute
+the program. Were the results what you expected?
+    Yes, this is exactly what I expected the program to do. Reading line by line, it's clear 
+    what is going on. 
+
+3. Try to compile the class Ex1 in Ex1.java. Why is there a syntax error?
+    The reason is the program is missing a closing bracket to close out class Ex1
+    on line 32.
+
+5. Now try to compile the program. What semantic error message is generated? Why?
+    error: ';' expected. The reason for this is that there are () after the object initialization. 
+    This is not the proper way to initialize java objects. 
+
+7. Compile Ex1.java and execute Ex1. Were the results what you expected?
+    results:
+    obj1 = Integer: 0; Double: 0.0
+    obj2 = Integer: 5; Double: 7.7
+    obj1 = Integer: 10; Double: 7.7
+    obj2 = Integer: 10; Double: 7.7
+
+    I expected the last print statement outting obj2 to be Integer: 5; Double: 7.7
+
+9. Compile Ex1.java and execute Ex1. Were the results what you expected?
+    results:
+    obj1 = Integer: 0; Double: 0.0
+    obj2 = Integer: 5; Double: 7.7
+    obj1 = Integer: 10; Double: 7.7
+    obj2 = Integer: 5; Double: 7.7
+
+    I had a hunch that this would happen. Since we are just making a copy, I expected that 
+    any changes to obj1 would not affect obj2. 
+
+10. Were the results (look above the error message) what you expected? Why did
+the program produce a “double free or corruption” error?
+    results:
+    obj1 = Size: 0; Doubles:
+    obj2 = Size: 5; Doubles: 7.7 8.47 9.317 10.2487 11.2736
+    obj1 = Size: 5; Doubles: 15.4 16.94 18.634 20.4974 22.5471
+    obj2 = Size: 5; Doubles: 15.4 16.94 18.634 20.4974 22.5471
+    free(): double free detected in tcache 2
+    Aborted (core dumped)
+
+    Yes, this result is what I expected. The program responds similarly to #7. Since
+    obj1 gets set equal to obj2, any changes to one will roll over to the other object. 
+
+12. Compile Ex2.cpp and execute the program. Are the results now what you expected when you
+first read the program?
+    results:
+    obj1 = Size: 0; Doubles:
+    obj2 = Size: 5; Doubles: 7.7 8.47 9.317 10.2487 11.2736
+    obj1 = Size: 5; Doubles: 15.4 16.94 18.634 20.4974 22.5471
+    obj2 = Size: 5; Doubles: 7.7 8.47 9.317 10.2487 11.2736
+
+    Yes, this is what I expected. Now that we have the assignment operator, this prevents us 
+    from making changes to obj2 when changes are made to obj1 since the assignment operator
+    creates a deep copy of obj1 and sets it to obj2. Since changes are made to obj1 after the 
+    assignment operator is called, it will not carry over the changes to obj2. 
+
+13. After reviewing the contents of the file Ex2.java, compile Ex2.java and execute Ex2. Were
+the results what you expected?
+    results:
+    obj1 = Size: 0; Doubles:
+    obj2 = Size: 5; Doubles: 7.7 8.47 9.317000000000002 10.248700000000003 11.273570000000005
+    obj1 = Size: 5; Doubles: 15.4 16.94 18.634000000000004 20.497400000000006 22.54714000000001
+    obj2 = Size: 5; Doubles: 7.7 8.47 9.317000000000002 10.248700000000003 11.273570000000005   
+
+    Yes, this is what I expected. Since how we saw in #9, when we make a copy, changes made to 
+    the one object will not affect the other.
+
+15. Compile Ex2.java and execute Ex2. Are the results now what you expected when you first
+read the program?
+    results:
+    Exception in thread "main" java.lang.NullPointerException: Cannot load from double array because "<local1>.doublevalues" is null
+        at Ex2.main(Ex2.java:50)
+    
+    I expected there to be an error but I wasn't sure what the particular error would do. We are 
+    trying to access data that doesn't exist in the class variable doublevalues but rather the local
+    variable that was declared in copy. Therefore, trying to access data from the associated array
+    will fail.
+
